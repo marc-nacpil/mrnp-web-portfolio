@@ -1,0 +1,72 @@
+.contact{
+    margin-top: 2%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 80%;
+    margin-top: -3.5%;
+    margin-bottom: 10%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ffffff;
+    transition: transform 0.2s;
+    border-bottom: 1px solid #999; 
+    padding-left: 2rem;
+}
+
+
+.contact-item:hover {
+    border-color: #999;
+    background-color: #ffffff;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.contact{
+    font-size: 3.9rem;
+    letter-spacing: -1px;
+}
+
+.contact-drop {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: -4rem;
+    letter-spacing: 0.2rem;
+}
+
+.city {
+    font-size: 1.1rem;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+.foot-logos a:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.3);
+}
