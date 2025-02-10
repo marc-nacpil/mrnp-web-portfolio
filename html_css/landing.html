@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="../assets/Profile.jpg" alt="Profile Picture" class="profile-image">
+            <h1><span class="highlight">Hi, I'm</span> Marc!</h1>
+            <p>A Portfolio of Academic Projects in the Field of Computer Science <br>at Holy Angel University.</p>
+            <a href="profile.html" class="cta-button">View Portfolio →</a>
+        </div>
+        <div class="right-section">
+            <div class="grid-pattern"></div>
+            <div class="shape-container">
+                <div class="floating-shape"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.right-section').addEventListener('mousemove', (e) => {
+            const shape = document.querySelector('.floating-shape');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            shape.style.transform = `translate(${x * 30}px, ${y * 30}px) rotate(${x * y * 30}deg)`;
+        });
+    </script>
+</body>
+</html>
